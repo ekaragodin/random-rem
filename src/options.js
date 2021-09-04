@@ -18,6 +18,9 @@ function App() {
     return (
         <>
             <h1>Random Rem Options</h1>
+            <p>
+                Create <a href="https://www.remnote.io/api_keys" target="_blank">a new API key</a> and paste it here.
+            </p>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <div>
                     <label>User id:

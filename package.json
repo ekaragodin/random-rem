@@ -4,8 +4,8 @@
   "description": "Random Rem Browser Extension",
   "private": true,
   "scripts": {
-    "dev": "parcel watch --dist-dir ./extension/dist --public-url . --no-hmr --no-content-hash src/options.html src/popup.html",
-    "build": "parcel build --dist-dir ./extension/dist --public-url . src/options.html src/popup.html"
+    "dev": "parcel watch --dist-dir ./extension/dist --public-url . --no-hmr --no-content-hash src/options.html src/popup.html src/background.js",
+    "build": "parcel build --dist-dir ./extension/dist --public-url . src/options.html src/popup.html src/background.js"
   },
   "author": "ekaragodin@gmail.com",
   "devDependencies": {

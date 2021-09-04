@@ -1,17 +1,21 @@
 {
     "manifest_version": 2,
-  
+
     "name": "Random Rem",
     "version": "0.0.0",
-  
+
     "browser_action": {
       "default_popup": "dist/popup.html"
     },
-  
+
     "options_page": "dist/options.html",
+
+    "background": {
+      "scripts": ["dist/background.js"],
+      "persistent": false
+    },
 
     "permissions": [
       "storage"
     ]
   }
-  

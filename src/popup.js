@@ -36,6 +36,12 @@ function App() {
         });
     }
 
+    if (Object.keys(auth).length === 0) {
+        return (
+            <a href="" onClick={() => chrome.runtime.openOptionsPage()}>The extension is not configured yet.</a>
+        );
+    }
+
     return (
         <div>
             {error && <div>Request failed with error: {error}</div>}
