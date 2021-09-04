@@ -2,7 +2,12 @@
     "manifest_version": 2,
 
     "name": "Random Rem",
-    "version": "0.0.0",
+    "description": "Open random rem from your RemNote account.",
+    "version": "0.1.0",
+
+    "icons": {
+      "16": "logo.png"
+    },
 
     "browser_action": {
       "default_icon": "logo.png",
