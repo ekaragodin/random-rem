@@ -51,7 +51,7 @@ function App() {
                 onClick={handleOpenRandomRem}
                 disabled={isLoading}
             >
-                Random Daily Note
+                Random Daily Document
             </button>
         </div>
     );
