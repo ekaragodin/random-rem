@@ -24,7 +24,7 @@ function App() {
 
         const randomId = rem.children[Math.floor(Math.random() * rem.children.length)];
         chrome.tabs.create({
-            url: `https://www.remnote.io/d/${randomId}`,
+            url: `https://www.remnote.io/document/${randomId}`,
         });
     }, [rem]);
 
