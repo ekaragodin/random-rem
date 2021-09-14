@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { render } from 'react-dom';
 import { useRequest } from './hooks/useRequest';
+import { sample } from './helpers';
 
 function App() {
     const [auth, setAuth] = useState({});
@@ -22,7 +23,7 @@ function App() {
             return;
         }
 
-        const randomId = rem.children[Math.floor(Math.random() * rem.children.length)];
+        const randomId = sample(rem.tagChildren);
         chrome.tabs.create({
             url: `https://www.remnote.io/document/${randomId}`,
         });
