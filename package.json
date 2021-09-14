@@ -5,7 +5,10 @@
   "private": true,
   "scripts": {
     "dev": "parcel watch --dist-dir ./extension/dist --public-url . --no-hmr --no-content-hash src/options.html src/popup.html src/background.js",
-    "build": "parcel build --dist-dir ./extension/dist --public-url . src/options.html src/popup.html src/background.js"
+    "build": "parcel build --dist-dir ./extension/dist --public-url . src/options.html src/popup.html src/background.js",
+    "zip": "zip -r random_rem.zip ./extension",
+    "rm": "rm -f random_rem.zip && rm -rf ./extension/dist",
+    "prepare": "yarn rm && yarn build && yarn zip"
   },
   "author": "ekaragodin@gmail.com",
   "devDependencies": {
