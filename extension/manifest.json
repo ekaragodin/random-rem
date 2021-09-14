@@ -3,7 +3,7 @@
 
     "name": "Random Rem",
     "description": "Open random rem from your RemNote account.",
-    "version": "0.1.1",
+    "version": "0.1.2",
 
     "icons": {
       "16": "logo.png"
